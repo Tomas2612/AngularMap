@@ -1,0 +1,48 @@
+#map {
+  width: 950px;
+  height: 420px;
+    margin-left: 100px;
+}
+body{
+    
+    background-color: black;
+}
+h3{
+    
+    color: red;
+    font-size: 44px;
+}
+label{
+    color: red;
+    font-size: 24px;
+}
+.form-control{
+    
+    background-color:gray;
+    color: white;
+}
+#btntxt{
+    background-color: blue;
+    font-size: 30px;
+    width: 450px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    margin-left: 200px;
+}
+#uno{
+    
+    width: 700px;
+}
+#direc{
+    margin-right: 500px;
+    background-color: blue;
+    font-size: 30px;
+    width: 450px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+}
+.row{
+    margin-left: 200px;
+}

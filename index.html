@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+       <head>
+       <meta charset="UTF-8">
+       <title>Angular Maps</title>
+       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-sanitize.min.js"></script>
+       <script src="ng-csv-0.3.6/build/ng-csv.js"></script>
+       <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+       <link rel="stylesheet" href="css/style.css">
+
+  </head>
+    
+  <body>
+  
+
+       <script src="https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+       <div ng-app="mapsApp" ng-controller="MapCtrl">
+       <div class="container">
+       <H3><strong><center> MAPA UBICACIONES </center></strong></H3>
+       <!-- <pre> {{cities | json}}</pre> -->
+    
+    <div class="row">
+      <div class="col-sm-12">
+        <label for="">Nombre</label>
+        <input id="uno" type="text" class="form-control" ng-model="city" /><br>
+        <label for="">Descripción</label>
+        <input id="uno" type="text" class="form-control" ng-model="desc" /><br>
+        <label id="uno" for="">Latitud</label>
+        <input id="uno" type="text" class="form-control" ng-model="lat" /><br>
+        <label for="">Longitud</label>
+        <input id="uno" type="text" class="form-control" ng-model="long" /><br>
+        <br>
+        <button id="direc" class="pull-right btn btn-success" ng-click="agregarDireccion()">Nueva Dirección</button>
+      </div>
+    </div>
+          <br / >  
+          <div id="map"></div> 
+          <br / >
+
+       
+      <a id="btntxt" class="pull-center btn btn-success" ng-click="saveJSON()" ng-href="{{ url }}">GUARDAR ARCHIVO JSON</a>
+   <br/>
+       <br / >
+           
+           
+  </div>
+</div> 
+    
+    
+        <script src="js/index.js"></script>
+
+    
+    
+  </body>
+</html>
